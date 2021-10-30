@@ -21,21 +21,6 @@ function template({ bundle }) {
     <meta name="description" content="Hacker News Clone built with Solid">
     <link rel="stylesheet" href="${publicPath}/index.css" />
     <link rel="shortcut icon" href="${publicPath}/favicon.ico" />
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <link rel="manifest" href="${publicPath}/manifest.webmanifest">
     <link rel="modulepreload" href="${publicPath}/${chunks.find((s) => s.startsWith("[...stories]"))}" />
   </head>
